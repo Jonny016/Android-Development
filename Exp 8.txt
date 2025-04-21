@@ -1,0 +1,9 @@
+Rainfall_data<-c(18,23,29,24,10)
+
+month<-c("Jun", "July", "Aug", "Sept", "Oct")
+
+png(filename="Bar chart.png")
+
+barplot (Rainfall_data, xlab="Month", ylab="Rainfall", main="Rainfall variation in monsoon season", names.arg=month, col="Gray", border="Red", ylim=c(0,30))
+
+dev.off
